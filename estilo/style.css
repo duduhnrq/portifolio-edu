@@ -20,6 +20,7 @@ body {
     padding: 0;
     background-color: var(--color001);
     font-family: var(--font001);
+    scroll-margin-top: 80px;
 }
 
 header {
@@ -44,7 +45,7 @@ nav {
     display: flex;
     justify-content: center;
     width: 100%;
-    gap: 20%;
+    gap: 10%;
 }
 
 nav .title {
@@ -131,3 +132,36 @@ nav ul a:hover::after {
     border-radius: 50%;
     transition: .3s;
 }
+
+#hero-section {
+    width: 100%;
+    height: calc(100vh - 80px);
+    margin-top: 80px;
+}
+
+.hero-content {
+    color: white;
+    width: 600px;
+    height: auto;
+}
+
+.hero-content h1, h2, h3 {
+    margin: 0;
+}
+
+.hero-content h1 {
+    color: var(--color004);
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.hero-content h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.hero-content h3 {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
