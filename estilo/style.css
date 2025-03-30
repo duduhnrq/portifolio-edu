@@ -24,6 +24,8 @@ body {
     scroll-margin-top: 80px;
 }
 
+/*Menu de Navegação*/
+
 header {
     width: 100%;
     height: 80px;
@@ -34,6 +36,7 @@ header {
     justify-content: center;
     align-items: center;
     transition: all .3s ease-in-out;
+    z-index: 1000;
 }
 
 header.scrolled {
@@ -100,6 +103,8 @@ nav ul a:hover::after {
     transition: all .3s;
 }
 
+/*Página Principal*/
+
 #hero-section {
     width: 100%;
     height: calc(100vh - 80px);
@@ -132,7 +137,7 @@ nav ul a:hover::after {
 .hero-content h2 {
     font-size: 1.5rem;
     font-weight: 500;
-    opacity: 0;
+    opacity: 1;
     transform: translateY(-10px);
     transition: all .5s ease-in-out;
 }
@@ -155,7 +160,7 @@ nav ul a:hover::after {
 .hero-content.visible h2,
 .hero-content.visible h3 {
     opacity: 1;
-    transform: translate(0);
+    transform: translateY(0);
 }
 
 .hero-content input {
@@ -203,12 +208,13 @@ nav ul a:hover::after {
     height: 400px;
     background: var(--color001) url(../imagens/eduardo001.png) no-repeat center center;
     border-radius: 50%;
-    box-shadow: -3px -3px 0px var(--color004);
+    box-shadow: -2px -2px 0px var(--color004);
     transition: all .3s ease-in-out;
 }
 
 .hero-image:hover {
-    box-shadow: -3px 3px 0px var(--color004);
+    box-shadow: -2px 2px 0px var(--color004);
+    transform: translate(10px, -10px);
 }
 
 #about-me {
@@ -217,19 +223,20 @@ nav ul a:hover::after {
     background-color: white;
 }
 
+/*Responsividade*/
+
 @media (max-width: 1000px) {
     nav {
         gap: 30%;
     }
 
     .nav-list {
-        z-index: 1000;
         position: absolute;
         top: 80px;
         height: 0;
         right: 0;
         width: 100%;
-        background-color: var(--color001);
+        background-color: red;
         flex-direction: column;
         gap: 8%;
         margin: 0;
