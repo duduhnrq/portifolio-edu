@@ -1,3 +1,5 @@
+// Adiciona um evento no Header ao rolar a página
+
 const header = document.getElementById("mainHeader");
 
 window.addEventListener("scroll", () => {
@@ -7,6 +9,8 @@ window.addEventListener("scroll", () => {
         header.classList.remove("scrolled");
     }
 });
+
+// Deixa o menu de navegação responsivo
 
 class MobileNavbar {
     constructor(mobileMenu, navList, navLinks) {
