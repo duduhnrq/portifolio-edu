@@ -119,6 +119,7 @@ nav ul a:hover::after {
     width: 600px;
     height: auto;
     line-height: 45px;
+    margin-left: 40px;
 }
 
 .hero-content h1, h2, h3 {
@@ -204,12 +205,13 @@ nav ul a:hover::after {
 }
 
 .hero-image {
-    width: 400px;
-    height: 400px;
+    min-width: 400px;
+    min-height: 400px;
     background: var(--color001) url(../imagens/eduardo001.png) no-repeat center center;
     border-radius: 50%;
     box-shadow: -2px -2px 0px var(--color004);
     transition: all .3s ease-in-out;
+    margin-right: 40px;
 }
 
 .hero-image:hover {
@@ -236,7 +238,7 @@ nav ul a:hover::after {
         height: 0;
         right: 0;
         width: 100%;
-        background-color: red;
+        background-color: var(--color001);
         flex-direction: column;
         gap: 8%;
         margin: 0;
@@ -263,7 +265,7 @@ nav ul a:hover::after {
     }
 
     .nav-list.active {
-        height: 30vh;
+        height: 40vh;
     }
 
     .mobile-menu.active .line1 {
@@ -276,5 +278,30 @@ nav ul a:hover::after {
 
     .mobile-menu.active .line3 {
         transform: rotate(45deg) translate(-6px, -6px);
+    }
+
+    #hero-section {
+        flex-direction: column-reverse;
+    }
+
+    .hero-content {
+        margin-top: 20px;
+        margin-left: 0;
+        width: 500px;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content hr {
+        width: 100%;
+    }
+
+    .hero-image {
+        margin: 0;
+        min-width: 250px;
+        min-height: 250px;
     }
 }
