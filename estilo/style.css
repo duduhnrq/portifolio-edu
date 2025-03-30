@@ -13,7 +13,8 @@
 }
 
 html {
-    overflow-x: hidden;   
+    overflow-x: hidden;
+    scroll-padding-top: 80px; 
 }
 
 body {
@@ -21,7 +22,6 @@ body {
     padding: 0;
     background-color: var(--color001);
     font-family: var(--font001);
-    scroll-margin-top: 80px;
 }
 
 /*Menu de Navegação*/
@@ -138,7 +138,7 @@ nav ul a:hover::after {
 .hero-content h2 {
     font-size: 1.5rem;
     font-weight: 500;
-    opacity: 1;
+    opacity: 0;
     transform: translateY(-10px);
     transition: all .5s ease-in-out;
 }
