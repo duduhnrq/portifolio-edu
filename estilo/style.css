@@ -117,7 +117,7 @@ nav ul a:hover::after {
 
 .hero-content {
     color: white;
-    width: 600px;
+    width: 700px;
     height: auto;
     line-height: 45px;
     margin-left: 40px;
@@ -153,7 +153,7 @@ nav ul a:hover::after {
 }
 
 .hero-content hr {
-    width: 700px;
+    width: 800px;
     margin: 20px 0px 20px 0px;
     border: 1px solid var(--color004);
 }
@@ -229,7 +229,7 @@ nav ul a:hover::after {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 30px;
+    gap: 10%;
     background-color: var(--color001);
     color: white;
 }
@@ -254,7 +254,8 @@ nav ul a:hover::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    width: 100%;
+    gap: 5%;
 }
 
 .box {
@@ -313,12 +314,11 @@ nav ul a:hover::after {
 
 .skills-icons img {
     width: 50px;
-    filter: brightness(0) saturate(100%) invert(15%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(98%) contrast(90%);
+    filter: brightness(0) invert(38%) sepia(74%) saturate(7254%) hue-rotate(206deg) contrast(107%);
     transition: all .3s ease-in-out;
 }
 
 .skills-icons img:hover {
-    filter: brightness(0) invert(38%) sepia(74%) saturate(7254%) hue-rotate(206deg) contrast(107%);
     transform: scale(1.1);
 }
 
