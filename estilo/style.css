@@ -5,7 +5,7 @@
 :root {
     --color001: #1e1e1e;
     --color002: #252525;
-    --color003: #2a2a2a;
+    --color003: #383838;
     --color004: #075fe4;
     --color005: #e8e9eb;
 
@@ -52,7 +52,7 @@ nav {
     gap: 15%;
 }
 
-nav .title {
+nav .logo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,7 +66,7 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 3rem;
     list-style: none;
 }
 
@@ -108,8 +108,9 @@ nav ul a:hover::after {
 
 #hero-section {
     width: 100%;
-    height: calc(100vh - 80px);
-    margin-top: 80px;
+    height: auto;
+    margin-top: 120px;
+    margin-bottom: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,11 +130,12 @@ nav ul a:hover::after {
 
 .hero-content h1 {
     color: var(--color004);
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 600;
     opacity: 0;
     transform: translateY(-10px);
     transition: all .5s ease-in-out .3s;
+    padding: 10px 0px 10px 0px;
 }
 
 .hero-content h2 {
@@ -224,27 +226,28 @@ nav ul a:hover::after {
 
 #about-me {
     width: 100%;
-    height: calc(100vh - 80px);
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 10%;
     background-color: var(--color001);
     color: white;
 }
 
-.about-title {
+.title {
     text-align: center;
+    color: white;
+    padding: 50px;
 }
 
-.about-title h1 {
+.title h1 {
     font-weight: 500;
     font-size: 1.5rem;
     margin: 0;
 }
 
-.about-title h2 {
+.title h2 {
     font-weight: 300;
     font-size: 1rem;
     margin: 0;
@@ -254,13 +257,14 @@ nav ul a:hover::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    gap: 5%;
+    width: 60%;
+    gap: 3rem;
 }
 
-.box {
+.about-box {
     width: 300px;
-    height: 250px;
+    height: auto;
+    padding: 20px;
     background-color: var(--color002);
     display: flex;
     flex-direction: column;
@@ -271,37 +275,37 @@ nav ul a:hover::after {
     transition: all .3s ease-in-out;
 }
 
-.box:hover {
+.about-box:hover {
     transform: translate(5px, -5px);
     box-shadow: -5px 5px 0px 0px var(--color004);
 }
 
-.box img {
+.about-box img {
     filter: brightness(0) invert(38%) sepia(74%) saturate(7254%) hue-rotate(206deg) contrast(107%);
     width: 40px;
 }
 
-.box h1 {
+.about-box h1 {
     font-size: 1rem;
     font-weight: 400;
     margin: 0;
 }
 
-.box p {
+.about-box p {
     font-size: .8rem;
     font-weight: 300;
     margin: 0;
-    width: 90%;
+
 }
 
-.box a {
+.about-box a {
     font-size: .8rem;
     font-weight: 300;
     color: var(--color004);
     text-decoration: none;
 }
 
-.box a:hover {
+.about-box a:hover {
     text-decoration: underline;
 }
 
@@ -326,7 +330,85 @@ nav ul a:hover::after {
 
 #projects {
     width: 100%;
-    height: calc(100vh - 80px);
+    height: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projects-boxs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.projects-box {
+    width: 60%;
+    height: auto;
+    background-color: var(--color002);
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.project-content {
+    width: 400px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+}
+
+.project-content h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.project-content a {
+    color: white;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.project-content a:hover {
+    color: grey;
+}
+
+.project-content p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.project-content strong {
+    font-weight: 500;
+}
+
+.project-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-icons img {
+    width: 50px;
+    filter: brightness(0) saturate(100%) invert(17%) sepia(10%) saturate(11%) hue-rotate(3deg) brightness(90%) contrast(82%);
+}
+
+.project-image {
+    width: 600px;
+    height: 400px;
+    margin: 30px;
+    background-color: var(--color003);
+    transition: all .3s ease-in-out;
+    border-radius: 8px;
+}
+
+.project-image:hover {
+    cursor: pointer;
+    transform: translate(5px, -5px);
+    box-shadow: -5px 5px 0px 1px var(--color004);
 }
 
 /*Responsividade*/
