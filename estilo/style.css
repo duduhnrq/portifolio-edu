@@ -258,7 +258,7 @@ nav ul a:hover::after {
     justify-content: center;
     align-items: center;
     width: 60%;
-    gap: max(0px, calc((60vw - 1020px) / 2));
+    gap: 50px;
 }
 
 .about-box {
@@ -425,7 +425,7 @@ nav ul a:hover::after {
     display: flex;
     justify-content: center;
     width: 60%;
-    gap: max(0px, calc((60vw - 1020px) / 2));
+    gap: 50px;
 }
 
 .experience-blocks h3 {
@@ -468,15 +468,15 @@ nav ul a:hover::after {
 .certifications-item {
     background-color: var(--color002);
     border-radius: 8px;
-    padding: 20px;
     width: 300px;
 }
 
 .certifications-item ul {
     list-style: none;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
-    padding: 0;
+    padding: 20px;
     margin: 0;
 }
 
@@ -618,12 +618,13 @@ nav ul a:hover::after {
     .hero-content {
         margin-top: 20px;
         margin-left: 0;
-        width: 500px;
+        width: 100%;
         text-align: center;
     }
 
     .hero-content h1 {
         font-size: 2.5rem;
+        padding: 0;
     }
 
     .hero-content hr {
@@ -632,8 +633,44 @@ nav ul a:hover::after {
 
     .hero-image {
         margin: 0;
-        /*min-width: 250px;
-        min-height: 250px;*/
         transform: scale(0.8);
+    }
+
+    .hero-image:hover {
+        box-shadow: -2px 2px 0px var(--color004);
+        transform: scale(0.9);
+    }
+
+    .about-boxs {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .experience-blocks {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .education-block {
+        width: 60%;
+    }
+
+    .certifications-block {
+        width: 60%;
+    }
+
+    .certifications-item {
+        width: 100%;
+    }
+
+    .freelance-block {
+        width: 60%;
+    }
+
+    .contact {
+        padding: 0;
+        width: 60%;
     }
 }
