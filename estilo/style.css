@@ -524,6 +524,36 @@ nav ul a:hover::after {
     font-size: 0.8rem;
 }
 
+/*Contato*/
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    background-color: var(--color002);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.contact h3 {
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.input-group input, textarea {
+    width: 100%;
+}
+
 
 
 /*Responsividade*/
