@@ -258,7 +258,7 @@ nav ul a:hover::after {
     justify-content: center;
     align-items: center;
     width: 60%;
-    gap: 3rem;
+    gap: max(0px, calc((60vw - 1020px) / 2));
 }
 
 .about-box {
@@ -411,6 +411,121 @@ nav ul a:hover::after {
     box-shadow: -5px 5px 0px 1px var(--color004);
 }
 
+/*Experiencia*/
+
+#experience {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-blocks {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    gap: max(0px, calc((60vw - 1020px) / 2));
+}
+
+.experience-blocks h3 {
+    color: var(--color003);
+    font-weight: 500;
+}
+
+.experience-blocks h4, h5, h6 {
+    margin: 0;
+}
+
+.experience-blocks h4 {
+    font-weight: 500;
+}
+
+.experience-blocks h5 {
+    font-weight: 400;
+}
+
+.experience-blocks h6 {
+    font-weight: 400;
+    color: #707070;
+}
+
+.experience-blocks hr {
+    width: 0px;
+    height: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: solid 1px var(--color004);
+}
+
+.education-item {
+    background-color: var(--color002);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0;
+}
+
+.certifications-item {
+    background-color: var(--color002);
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+}
+
+.certifications-item ul {
+    list-style: none;
+    display: grid;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.certifications-item li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.certification-image {
+    background-color: var(--color003);
+    width: 150px;
+    height: 120px;
+    border-radius: 8px;
+    transition: all .3s ease-in-out;
+}
+
+.certification-image:hover {
+    cursor: pointer;
+    transform: translate(5px, -5px);
+    box-shadow: -5px 5px 0px 0px var(--color004);
+}
+
+.freelance-block {
+    width: 360px;
+}
+
+.freelance-item {
+    background-color: var(--color002);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0;
+}
+
+.freelance-item ul {
+    padding-left: 20px;
+}
+
+.freelance-item ul p {
+    font-size: 0.8rem;
+}
+
+.freelance-item li::marker {
+    color: #075fe4;
+    font-size: 0.8rem;
+}
+
+
+
 /*Responsividade*/
 
 @media (max-width: 1000px) {
@@ -451,7 +566,7 @@ nav ul a:hover::after {
     }
 
     .nav-list.active {
-        height: 40vh;
+        height: 30vh;
     }
 
     .mobile-menu.active .line1 {
@@ -487,7 +602,8 @@ nav ul a:hover::after {
 
     .hero-image {
         margin: 0;
-        min-width: 250px;
-        min-height: 250px;
+        /*min-width: 250px;
+        min-height: 250px;*/
+        transform: scale(0.8);
     }
 }
