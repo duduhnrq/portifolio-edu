@@ -546,7 +546,14 @@ nav ul a:hover::after {
     width: 60%;
     background-color: var(--color002);
     border-radius: 8px;
+}
+
+.contact form {
     padding: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .contact h3 {
@@ -554,11 +561,60 @@ nav ul a:hover::after {
     font-size: 0.8rem;
 }
 
-.input-group input, textarea {
-    width: 100%;
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
+.input-group input, textarea {
+    width: 100%;
+    border: none;
+    background-color: var(--color003);
+    font-family: var(--font001);
+    padding: 10px;
+}
 
+.send-btn {
+    width: 120px;
+    background-color: var(--color004);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: var(--font001);
+    font-weight: 400;
+    font-size: 1rem;
+    transition: all .3s ease-in-out;
+}
+
+.send-btn:hover {
+    cursor: pointer;
+    box-shadow: inset 0px 0px 0px 2px var(--color004);
+    background-color: var(--color002);
+    transform: translate(-2px, -2px);
+}
+
+.submit-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    filter: brightness(0) saturate(100%) invert(43%) sepia(100%) saturate(7498%) hue-rotate(213deg) brightness(98%) contrast(95%);
+}
 
 /*Responsividade*/
 
