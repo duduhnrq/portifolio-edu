@@ -118,7 +118,7 @@ nav ul a:hover::after {
 .hero-container {
     width: 60%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -259,15 +259,16 @@ nav ul a:hover::after {
 
 .about-boxs {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 60%;
+    height: 300px;
     gap: 50px;
 }
 
 .about-box {
     width: 300px;
-    height: auto;
+    height: 220px;
     padding: 20px;
     background-color: var(--color002);
     display: flex;
@@ -427,7 +428,7 @@ nav ul a:hover::after {
 
 .experience-blocks {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 60%;
     gap: 50px;
 }
@@ -507,7 +508,7 @@ nav ul a:hover::after {
 }
 
 .freelance-block {
-    width: auto;
+    width: 340px;
 }
 
 .freelance-item {
@@ -656,7 +657,36 @@ footer a {
 
 /*Responsividade*/
 
-@media (max-width: 1000px) {
+@media (max-width: 1800px) {
+    .experience-blocks {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .education-block {
+        width: 60%;
+    }
+
+    .education-item {
+        width: auto;
+    }
+
+    .certifications-block {
+        width: 60%;
+    }
+
+    .certifications-item {
+        width: auto;
+    }
+
+    .freelance-block {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1400px) {
     nav {
         gap: 30%;
     }
@@ -742,33 +772,52 @@ footer a {
 
     .about-boxs {
         flex-direction: column;
+        height: auto;
         gap: 50px;
     }
 
-    .experience-blocks {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
+    .projects-box {
+        flex-direction: column-reverse;
+    }
+
+    .project-content {
+        width: auto;
+        padding-top: 0;
+    }
+
+    .project-image {
+        width: auto;
+        margin-bottom: 0;
+    }   
+}
+
+@media (max-width: 800px) {
+    .about-boxs {
+        width: 90%;
+    }
+
+    .skills-icons {
+        width: 90%;
+        flex-wrap: wrap;
+    }
+
+    .projects-box {
+        width: 90%;
     }
 
     .education-block {
-        width: 60%;
-    }
-
-    .education-item {
-        width: auto;
+        width: 90%;
     }
 
     .certifications-block {
-        width: 60%;
-    }
-
-    .certifications-item {
-        width: auto;
+        width: 90%;
     }
 
     .freelance-block {
-        width: 60%;
+        width: 90%;
+    }
+
+    .contact {
+        width: 90%;
     }
 }
