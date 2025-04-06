@@ -416,6 +416,21 @@ nav ul a:hover::after {
     box-shadow: -5px 5px 0px 1px var(--color004);
 }
 
+#image001 {
+    background: var(--color003) url(../imagens/pyzel-site.PNG) no-repeat top center;
+    background-size: cover;
+}
+
+#image002 {
+    background: var(--color003) url(../imagens/xbox-site.PNG) no-repeat top center;
+    background-size: cover;
+}
+
+#image003 {
+    background: var(--color003) url(../imagens/profile-site.PNG) no-repeat top center;
+    background-size: cover;
+}
+
 /*Experiencia*/
 
 #experience {
@@ -505,6 +520,16 @@ nav ul a:hover::after {
     cursor: pointer;
     transform: translate(5px, -5px);
     box-shadow: -5px 5px 0px 0px var(--color004);
+}
+
+#certification001 {
+    background: var(--color003) url(../imagens/certificado001.jpg) no-repeat top center;
+    background-size: cover;
+}
+
+#certification002 {
+    background: var(--color003) url(../imagens/certificado002.jpg) no-repeat top center;
+    background-size: cover;
 }
 
 .freelance-block {
@@ -760,6 +785,10 @@ footer a {
         width: 100%;
     }
 
+    .hero-content input {
+        margin: 5px;
+    }
+
     .hero-image {
         margin: 0;
         transform: scale(0.8);
@@ -787,8 +816,9 @@ footer a {
 
     .project-image {
         width: auto;
+        height: 300px;
         margin-bottom: 0;
-    }   
+    }
 }
 
 @media (max-width: 800px) {
