@@ -532,6 +532,11 @@ nav ul a:hover::after {
     background-size: cover;
 }
 
+#certification003 {
+    background: var(--color003) url(../imagens/certificado003.jpg) no-repeat top center;
+    background-size: cover;
+}
+
 .freelance-block {
     width: 340px;
 }
