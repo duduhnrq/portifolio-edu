@@ -716,7 +716,37 @@ footer a {
     }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1400px) /*Notebook*/ {
+    .hero-container {
+        width: 80%;
+    }
+
+    .about-boxs {
+        width: 80%;
+    }
+
+    .projects-box {
+        width: 80%;
+    }
+
+    .education-block {
+        width: 80%;
+    }
+
+    .certifications-block {
+        width: 80%;
+    }
+
+    .freelance-block {
+        width: 80%;
+    }
+
+    .contact {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1300px) {
     nav {
         gap: 30%;
     }
