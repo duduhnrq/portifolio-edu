@@ -14,7 +14,7 @@
 
 html {
     overflow-x: hidden;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
     scroll-padding-top: 80px; 
 }
 
@@ -140,7 +140,6 @@ nav ul a:hover::after {
     opacity: 0;
     transform: translateY(-10px);
     transition: all .5s ease-in-out .3s;
-    padding: 10px 0px 10px 0px;
 }
 
 .hero-content h2 {
@@ -157,12 +156,6 @@ nav ul a:hover::after {
     opacity: 0;
     transform: translateY(-10px);
     transition: all .5s ease-in-out .6s;
-}
-
-.hero-content hr {
-    width: 110%;
-    margin: 20px 0px 20px 0px;
-    border: 1px solid var(--color004);
 }
 
 .hero-content.visible h1,
