@@ -158,6 +158,10 @@ nav ul a:hover::after {
     transition: all .5s ease-in-out .6s;
 }
 
+.hero-content h3 span {
+    color: var(--color004);
+}
+
 .hero-content.visible h1,
 .hero-content.visible h2,
 .hero-content.visible h3 {
