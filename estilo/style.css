@@ -534,6 +534,35 @@ nav ul a:hover::after {
     background-size: cover;
 }
 
+.learn-more-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.learn-more {
+    box-sizing: border-box;
+    text-align: center;
+    width: 150px;
+    text-decoration: none;
+    padding: 1rem;
+    background-color: var(--color004);
+    color: white;
+    font-family: var(--font001);
+    font-weight: 400;
+    font-size: 1rem;
+    transition: all .3s ease-in-out;
+    border-radius: 8px;
+}
+
+.learn-more:hover {
+    box-shadow: inset 0px 0px 0px 2px var(--color004);
+    background-color: var(--color002);
+    transform: translate(-2px, -2px);
+}
+
 .freelance-item {
     background-color: var(--color002);
     border-radius: 8px;
