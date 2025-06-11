@@ -370,6 +370,9 @@ nav ul a:hover::after {
 }
 
 .project-content a {
+    display: flex;
+    align-items: center;
+    gap: .1rem;
     color: white;
     text-decoration: none;
     transition: all .3s ease-in-out;
@@ -377,6 +380,11 @@ nav ul a:hover::after {
 
 .project-content a:hover {
     color: grey;
+}
+
+.project-content a img {
+    width: 20px;
+    filter: invert();
 }
 
 .project-content p {
@@ -424,7 +432,7 @@ nav ul a:hover::after {
 }
 
 #image003 {
-    background: var(--color003) url(../imagens/profile-site.PNG) no-repeat top center;
+    background: var(--color003) url(../imagens/siri-stage.png) no-repeat top center;
     background-size: cover;
 }
 
@@ -651,6 +659,7 @@ nav ul a:hover::after {
 }
 
 .input-group input, textarea {
+    color: white;
     width: 100%;
     border: none;
     background-color: var(--color003);
