@@ -741,6 +741,11 @@ footer ul {
 footer a {
     font-size: 0.7rem;
     color: white;
+    transition: all .3s ease-in-out;
+}
+
+footer a:hover {
+    color: rgb(209, 209, 209);
 }
 
 /*Responsividade*/
