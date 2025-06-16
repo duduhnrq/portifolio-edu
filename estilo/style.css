@@ -325,7 +325,7 @@ nav ul a:hover::after {
 }
 
 .skills-icons img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1) rotate(15deg);
 }
 
 /*Projetos*/
@@ -665,6 +665,14 @@ nav ul a:hover::after {
     background-color: var(--color003);
     font-family: var(--font001);
     padding: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.input-group input:focus, 
+.input-group textarea:focus {
+    outline: none;
+    box-shadow: inset 0px 0px 0px 2px var(--color004);
+    border-radius: 8px;
 }
 
 .send-btn {
