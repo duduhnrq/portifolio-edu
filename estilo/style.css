@@ -422,7 +422,7 @@ nav ul a:hover::after {
 }
 
 #image001 {
-    background: var(--color003) url(../imagens/pyzel-site.PNG) no-repeat top center;
+    background: var(--color003) url(../imagens/thermic-site.PNG) no-repeat top center;
     background-size: cover;
 }
 
