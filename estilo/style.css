@@ -398,6 +398,7 @@ nav ul a:hover::after {
 
 .project-icons {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
@@ -427,7 +428,7 @@ nav ul a:hover::after {
 }
 
 #image002 {
-    background: var(--color003) url(../imagens/xbox-site.png) no-repeat top center;
+    background: var(--color003) url(../imagens/to-do-list.png) no-repeat top center;
     background-size: cover;
 }
 
